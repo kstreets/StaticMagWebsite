@@ -1,5 +1,5 @@
 import styles from './page.module.css'
-import Image from "next/image"
+import Image from 'next/image'
 import Link from 'next/link';
 
 export default function Home() {
@@ -14,15 +14,21 @@ export default function Home() {
 function Header() {
   return (
     <header className={styles.header}>
+      <Image className={styles.headerImage} 
+        src="/Starfield_Logo.png"
+        alt='logo'
+        width={300}
+        height={206}
+      />
       <nav className={styles.nav}>
         <Link className={styles.navButton} href="">
-          Features
+          FEATURES
         </Link>
         <Link className={styles.navButton} href="">
-          News 
+          NEWS 
         </Link>
         <Link className={styles.navButton} href="">
-          Media 
+          MEDIA 
         </Link>
       </nav>
     </header>
@@ -31,12 +37,19 @@ function Header() {
 
 function HeroImage() {
   return (
-    <Image
-      className={styles.responsiveImage}
-      src="/Starfield_Hero.webp"
-      alt='hero image'
-      width={1920}
-      height={650}
-    />
+    <div>
+      <Image
+        className={styles.responsiveImage}
+        src="/Starfield_Hero.webp"
+        alt='hero image'
+        width={1920}
+        height={650}
+      />
+      <div className={styles.imageOverlay}>
+        <button>
+          Wishlist Now   
+        </button>
+      </div>
+    </div>
   );
 }
