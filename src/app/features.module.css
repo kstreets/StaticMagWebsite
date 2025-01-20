@@ -1,0 +1,38 @@
+.mainDiv {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: auto;
+  background-color: black;
+}
+
+.singleFeatureDiv {
+  display: flex;
+  position: relative;
+  width: auto;
+  height: auto;
+}
+
+.textDiv {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10%;
+  gap: 20px;
+  width: 30%;
+  height: 100%;
+}
+
+.header {
+  font-size: 32px;
+  color: white;
+}
+
+.paragraph {
+  font-size: 24px;
+  color: white;
+}

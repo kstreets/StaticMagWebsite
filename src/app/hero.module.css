@@ -1,0 +1,49 @@
+.heroParent {
+  width: 100%;
+  height: 650px;
+  position: relative;
+  background-color: black;
+}
+
+.heroImage {
+  width: 1920;
+  height: 650;
+  display: flex;
+  justify-self: center;
+}
+
+.heroHeader {
+  width: 500px;
+  top: 20%;
+  left: 15%;
+  text-align: center;
+  position: absolute;
+  color: white;
+  font-size: 25px;
+  transform: translate(-125px, 0px);
+}
+
+.steamWishlistOverlay {
+  position: absolute;
+  bottom: 20%;
+  left: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.steamLogo {
+  width: 130px;
+  height: auto;
+  aspect-ratio: 210 / 66;
+}
+
+.wishListButton {
+  color: #DEE2DA;
+  font-size: 24px;
+  background-color: #75B022;
+  border-style: hidden;
+  width: 260px;
+  height: 60px;
+}
