@@ -12,7 +12,15 @@
 .singleFeatureDiv {
   display: flex;
   position: relative;
-  width: auto;
+  width: 100%;
+  height: auto;
+}
+
+.img {
+  min-width: 960;
+  max-width: 1920;
+  aspect-ratio: 1920 / 650;
+  width: 100%;
   height: auto;
 }
 
@@ -23,7 +31,7 @@
   justify-content: center;
   margin-left: 10%;
   gap: 20px;
-  width: 30%;
+  width: 35%;
   height: 100%;
 }
 

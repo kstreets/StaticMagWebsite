@@ -35,30 +35,20 @@
   width: 70%;
   height: 50px;
   border: 2px solid white;
-  background-color: #0b192b;
+  background-image: linear-gradient(#21314f, #21314f);
+  background-size: 100% 0%;
+  background-repeat: no-repeat;
+  background-position: bottom;
   color: white;
   font-size: medium;
   text-align: center;
   align-content: center;
   text-decoration: none;
-  animation-name: cellButtonUnHover;
-  animation-duration: 0.3s;
+  transition: background-size .2s;
 }
 
 .cellButton:hover {
-  animation-name: cellButtonHover;
-  animation-duration: 0.3s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes cellButtonUnHover {
-  from {background-color: red;}
-  to {background-color: #0b192b;}
-}
-
-@keyframes cellButtonHover {
-  from {background-color: #0b192b;}
-  to {background-color: red;}
+  background-size: 100% 100%;
 }
 
 .divider {

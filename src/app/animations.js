@@ -1,8 +1,9 @@
-import {motion} from 'framer-motion'
+import {color, motion} from 'framer-motion'
 
 export function FadeUp({children, delay = 0.25}) {
   return (
     <motion.div
+      style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: 'auto', height: 'auto'}}
       initial={{opacity: 0, translateY: 50}}
       animate={{opacity: 1, translateY: 0}}
       transition={{delay: delay, duration: 0.8, ease: "easeOut"}}
@@ -15,6 +16,7 @@ export function FadeUp({children, delay = 0.25}) {
 export function Fade({children, delay = 0.25}) {
   return (
     <motion.div
+      style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: 'auto', height: 'auto'}}
       initial={{opacity: 0}}
       animate={{opacity: 1}}
       transition={{delay: delay, duration: 0.8}}

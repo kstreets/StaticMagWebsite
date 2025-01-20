@@ -1,15 +1,18 @@
 .heroParent {
   width: 100%;
-  height: 650px;
+  height: auto;
   position: relative;
   background-color: black;
 }
 
 .heroImage {
-  width: 1920;
-  height: 650;
+  width: 100%;
+  height: auto;
+  min-width: 960;
+  max-width: 1920;
   display: flex;
   justify-self: center;
+  aspect-ratio: 1920 / 650;
 }
 
 .heroHeader {
@@ -43,7 +46,11 @@
   color: #DEE2DA;
   font-size: 24px;
   background-color: #75B022;
+  border-radius: 5px;
   border-style: hidden;
-  width: 260px;
-  height: 60px;
+  width: 210px;
+  height: 50px;
+  text-decoration: none;
+  text-align: center;
+  align-content: center;
 }

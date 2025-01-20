@@ -72,12 +72,13 @@ function HeroImage() {
       </div>
       <div className={styles.steamWishlistOverlay}>
         <FadeUp delay={0.3}>
-          <motion.button 
+          <motion.a 
             className={styles.wishListButton}
             whileHover={{ scale: 1.05 }}
+            href={"https://store.steampowered.com/app/2275370/Static_Mag/"}
           >
             Wishlist Now   
-          </motion.button>
+          </motion.a>
         </FadeUp>
         <FadeUp delay={0.6}>
           <Image
@@ -152,10 +153,11 @@ function FeatureDiv({imgSrc, imgAlt, header, paragraph}) {
   return(
     <div className={styles.singleFeatureDiv}>
       <Image
-          src={imgSrc}
-          alt={imgAlt}
-          width={1920}
-          height={650}
+        className={styles.img}
+        src={imgSrc}
+        alt={imgAlt}
+        width={1920}
+        height={650}
       />
       <div className={styles.textDiv}>
         <h1 className={styles.header}>
@@ -210,12 +212,13 @@ function SocialCell({imgSrc, imgAlt, buttonText, link}) {
         width={75}
         height={75}
       />
-      <a 
+      <motion.a 
+        whileHover={{scale: 1.05}}
         className={styles.cellButton}
         href={link}
       >
         {buttonText}
-      </a>
+      </motion.a>
     </div>
   );
 }
