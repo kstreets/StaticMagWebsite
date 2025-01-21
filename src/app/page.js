@@ -10,7 +10,7 @@ import footerStyles   from './footer.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 import {motion} from 'framer-motion'
-import {FadeUp, Fade} from './animations.js'
+import {FadeUp, Fade, FadeInOnView} from './animations.js'
 
 export default function Home() {
   return (
@@ -151,23 +151,23 @@ function Features() {
 function FeatureDiv({imgSrc, imgAlt, header, paragraph}) {
   const styles = featuresStyles
   return(
-    <div className={styles.singleFeatureDiv}>
-      <Image
-        className={styles.img}
-        src={imgSrc}
-        alt={imgAlt}
-        width={1920}
-        height={650}
-      />
-      <div className={styles.textDiv}>
-        <h1 className={styles.header}>
-          {header}
-        </h1>
-        <p className={styles.paragraph}>
-          {paragraph}
-        </p>
-      </div>
-    </div>
+      <FadeInOnView className={styles.singleFeatureDiv}>
+        <Image
+          className={styles.img}
+          src={imgSrc}
+          alt={imgAlt}
+          width={1920}
+          height={650}
+        />
+        <div className={styles.textDiv}>
+          <h1 className={styles.header}>
+            {header}
+          </h1>
+          <p className={styles.paragraph}>
+            {paragraph}
+          </p>
+        </div>
+      </FadeInOnView>
   );
 }
 
