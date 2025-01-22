@@ -54,41 +54,45 @@ function HeroImage() {
   const styles = heroStyles
   return (
     <div className={styles.heroParent}>
-      <Fade>
-        <Image
-          className={styles.heroImage}
-          src="/StaticMag_Hero.png"
-          alt='hero image'
-          width={1920}
-          height={650}
-        />
-      </Fade>
-      <div className={styles.heroHeader}>
-        <FadeUp delay={0.15}>
-          <h1>
-            AN FPS WITHOUT RELOADING
-          </h1>
-        </FadeUp>
-      </div>
-      <div className={styles.steamWishlistOverlay}>
-        <FadeUp delay={0.3}>
-          <motion.a 
-            className={styles.wishListButton}
-            whileHover={{ scale: 1.05 }}
-            href={"https://store.steampowered.com/app/2275370/Static_Mag/"}
-          >
-            Wishlist Now   
-          </motion.a>
-        </FadeUp>
-        <FadeUp delay={0.6}>
+      <div className={styles.heroContent}>
+        <Fade>
           <Image
-            className={styles.steamLogo}
-            src="/Steam_Logo.png"
-            alt='steam logo'
-            width={210}
-            height={66}
+            className={styles.heroImage}
+            src="/StaticMag_Hero.png"
+            alt='hero image'
+            width={1920}
+            height={650}
           />
-        </FadeUp>
+        </Fade>
+        <div className={styles.heroOverlay}>
+          <div className={styles.heroHeader}>
+            <FadeUp delay={0.15}>
+              <h1>
+                AN FPS WITHOUT RELOADING
+              </h1>
+            </FadeUp>
+          </div>
+          <div className={styles.steamWishlistOverlay}>
+            <FadeUp delay={0.3}>
+              <motion.a 
+                className={styles.wishListButton}
+                whileHover={{ scale: 1.05 }}
+                href={"https://store.steampowered.com/app/2275370/Static_Mag/"}
+              >
+                Wishlist Now   
+              </motion.a>
+            </FadeUp>
+            <FadeUp delay={0.6}>
+              <Image
+                className={styles.steamLogo}
+                src="/Steam_Logo.png"
+                alt='steam logo'
+                width={210}
+                height={66}
+              />
+            </FadeUp>
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -99,9 +103,9 @@ function About() {
   return (
     <div className={styles.mainDiv}>
       <div className={styles.grid}>
-        <h6 className={styles.aboutHeader}>
+        <h3 className={styles.aboutHeader}>
           About
-        </h6>
+        </h3>
         <div className={styles.aboutBody}>
           Starfield is the first new universe in over 25 years from Bethesda Game Studios, the award-winning creators of The Elder Scrolls V: Skyrim and Fallout 4. In this next generation role-playing game set amongst the stars, create any character you want and explore with unparalleled freedom as you embark on an epic journey to answer humanity’s greatest mystery.
         </div>

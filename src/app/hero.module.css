@@ -2,7 +2,15 @@
   width: 100%;
   height: auto;
   position: relative;
+  justify-items: center;
   background-color: black;
+}
+
+.heroContent {
+  width: 100%;
+  height: auto;
+  max-width: 1920px;
+  position: relative;
 }
 
 .heroImage {
@@ -15,24 +23,41 @@
   aspect-ratio: 1920 / 650;
 }
 
+.heroOverlay {
+  display: grid;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  margin-left: 10%;
+  transform: translateY(-50%);
+  max-width: 500px;
+  max-height: 500px;
+  grid-template-columns: auto;
+  grid-template-rows: auto, auto;
+  justify-items: center;
+  align-items: center;
+}
+
 .heroHeader {
-  width: 500px;
+  display: grid;
+  width: 100%;
+  height: 100%;
   top: 20%;
   left: 15%;
   text-align: center;
-  position: absolute;
+  align-content: center;
   color: white;
   font-size: 25px;
-  transform: translate(-125px, 0px);
 }
 
 .steamWishlistOverlay {
-  position: absolute;
-  bottom: 20%;
-  left: 15%;
+  display: grid;
+  width: 100%;
+  height: 100%;
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  align-items: center;
   gap: 12px;
 }
 
