@@ -9,20 +9,34 @@ import footerStyles   from './footer.module.css'
 
 import Image from 'next/image'
 import Link from 'next/link'
+import Head from 'next/head'
 import {motion} from 'framer-motion'
 import {FadeUp, Fade, FadeInOnView, ScaleOnHover} from './animations.js'
 
 export default function Home() {
   return (
-    <div>
-      <Header/>
-      <HeroImage/>
-      <About/>
-      <Features/>
-      <Socials/>
-      <Footer/>
-    </div>
+    <>
+      <HeadInfo/>
+      <div>
+        <Header/>
+        <HeroImage/>
+        <About/>
+        <Features/>
+        <Socials/>
+        <Footer/>
+      </div>
+    </>
   ); 
+}
+
+function HeadInfo() {
+  return (
+    <Head>
+      <title>Your Website Title</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="Your website description here" />
+    </Head>
+  );
 }
 
 function Header() {
