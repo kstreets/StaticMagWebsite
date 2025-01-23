@@ -10,7 +10,7 @@ import footerStyles   from './footer.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 import {motion} from 'framer-motion'
-import {FadeUp, Fade, FadeInOnView} from './animations.js'
+import {FadeUp, Fade, FadeInOnView, ScaleOnHover} from './animations.js'
 
 export default function Home() {
   return (
@@ -36,17 +36,34 @@ function Header() {
         height={206}
       />
       <nav className={styles.nav}>
-        <Link className={styles.navButton} href="">
-          FEATURES
-        </Link>
-        <Link className={styles.navButton} href="">
-          NEWS 
-        </Link>
-        <Link className={styles.navButton} href="">
-          MEDIA 
-        </Link>
+        <HeaderNavButton
+          buttonText={"ABOUT"}
+          link={"#about-section"}
+        />
+        <HeaderNavButton
+          buttonText={"FEATURES"}
+          link={"#features-section"}
+        />
+        <HeaderNavButton
+          buttonText={"SOCIALS"}
+          link={"#socials-section"}
+        />
       </nav>
     </header>
+  );
+}
+
+function HeaderNavButton({buttonText, link}) {
+  const styles = headerStyles;
+  return (
+    <ScaleOnHover>
+      <Link 
+        className={styles.navButton} 
+        href={link}
+      >
+        {buttonText}
+      </Link>
+    </ScaleOnHover>
   );
 }
 
@@ -101,7 +118,10 @@ function HeroImage() {
 function About() {
   const styles = aboutStyles
   return (
-    <div className={styles.mainDiv}>
+    <div 
+      id="about-section" 
+      className={styles.mainDiv}
+    >
       <div className={styles.grid}>
         <h3 className={styles.aboutHeader}>
           About
@@ -129,7 +149,10 @@ function About() {
 function Features() {
   const styles = featuresStyles
   return (
-    <div className={styles.mainDiv}>
+    <div 
+      id="features-section" 
+      className={styles.mainDiv}
+    >
       <FeatureDiv
         imgSrc={"/Steal_Feature.png"}
         imgAlt={"steal feature"}
@@ -178,7 +201,10 @@ function FeatureDiv({imgSrc, imgAlt, header, paragraph}) {
 function Socials() {
   const styles = socialsStyles
   return (
-    <div className={styles.mainDiv}>
+    <div 
+      id="socials-section"
+      className={styles.mainDiv}
+    >
       <div className={styles.grid}>
         <SocialCell
           imgSrc={"/Youtube_Social.png"}
@@ -230,8 +256,6 @@ function SocialCell({imgSrc, imgAlt, buttonText, link}) {
 function Footer() {
   const styles = footerStyles
   return (
-    <div className={styles.mainDiv}>
-
-    </div>
+    <div className={styles.mainDiv}/>
   );
 }

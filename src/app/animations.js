@@ -54,3 +54,15 @@ export function FadeInOnView({children, className = ""}) {
     </motion.div>
   );
 }
+
+export function ScaleOnHover({children, className = ""}) {
+  return (
+    <motion.div
+      className={className}
+      style={className === "" ? style : undefined}
+      whileHover={{ scale: 1.05 }}
+    >
+      {children}
+    </motion.div>
+  );
+}

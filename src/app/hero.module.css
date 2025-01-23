@@ -79,3 +79,32 @@
   text-align: center;
   align-content: center;
 }
+
+@media (max-width: 1200px) {
+  .heroHeader {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .heroOverlay {
+    margin-left: 0%;
+    max-width: 300px;
+    max-height: 500px;
+  }
+
+  .wishListButton {
+    width: 200px;
+    height: 40px;
+  }
+
+  .steamLogo {
+    width: 110px;
+  }
+}
+
+@media (max-width: 850px) {
+  .heroHeader {
+    font-size: 14px;
+  }
+}
