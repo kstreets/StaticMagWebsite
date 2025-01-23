@@ -32,9 +32,9 @@ export default function Home() {
 function HeadInfo() {
   return (
     <Head>
-      <title>Your Website Title</title>
+      <title>Static Mag</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="description" content="Your website description here" />
+      <meta name="description" content="The offical website for the game Static Mag." />
     </Head>
   );
 }
@@ -274,6 +274,10 @@ function SocialCell({imgSrc, imgAlt, buttonText, link}) {
 function Footer() {
   const styles = footerStyles
   return (
-    <div className={styles.mainDiv}/>
+    <div className={styles.mainDiv}>
+      <p className={styles.footerText}>
+        Handmade by Kyle Rhoads using Next.js
+      </p>
+    </div>
   );
 }
