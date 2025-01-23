@@ -127,7 +127,8 @@ function About() {
           About
         </h3>
         <div className={styles.aboutBody}>
-          Starfield is the first new universe in over 25 years from Bethesda Game Studios, the award-winning creators of The Elder Scrolls V: Skyrim and Fallout 4. In this next generation role-playing game set amongst the stars, create any character you want and explore with unparalleled freedom as you embark on an epic journey to answer humanity’s greatest mystery.
+          Static Mag is a first-person shooter set in the near future within a dystopian city overrun by a ruthless drug cartel that oppresses its citizens.
+          You play as an oppressed civilian who invents a magnetic device to steal weapons from cartel members and purge the skyscrapers of their control.
         </div>
         <div className={styles.aboutDev}>
           <Image
@@ -156,20 +157,20 @@ function Features() {
       <FeatureDiv
         imgSrc={"/Steal_Feature.png"}
         imgAlt={"steal feature"}
-        header={"Explore Space"}
-        paragraph={"Starfield is the first new universe in over 25 years from Bethesda Game Studios, the award-winning creators of The Elder Scrolls V: Skyrim and Fallout 4. In this next generation role-playing game set amongst the stars, create any character you want and explore with unparalleled freedom as you embark on an epic journey to answer humanity’s greatest mystery."}
+        header={"Magnet"}
+        paragraph={"Steal weapons from your enemies and turn their firepower against them, using your ingenuity to outsmart and overpower those who stand in your way. Adapt to every situation, turning the tools of oppression into instruments of liberation as you fight to reclaim the city from the grip of tyranny."}
       />
       <FeatureDiv
         imgSrc={"/Dodge_Feature.png"}
-        imgAlt={"steal feature"}
-        header={"Explore Space"}
-        paragraph={"Starfield is the first new universe in over 25 years from Bethesda Game Studios, the award-winning creators of The Elder Scrolls V: Skyrim and Fallout 4. In this next generation role-playing game set amongst the stars, create any character you want and explore with unparalleled freedom as you embark on an epic journey to answer humanity’s greatest mystery."}
+        imgAlt={"dodge feature"}
+        header={"Movement"}
+        paragraph={"Slide beneath a hail of enemy bullets, wall-run across the gaps between towering buildings, scale walls with agility, or grab a zipline to crash through a window in a daring entrance. Use every trick in your arsenal to navigate the chaotic urban battlefield and outmaneuver your enemies in style."} 
       />
       <FeatureDiv
         imgSrc={"/Punch_Feature.png"}
-        imgAlt={"steal feature"}
-        header={"Explore Space"}
-        paragraph={"Starfield is the first new universe in over 25 years from Bethesda Game Studios, the award-winning creators of The Elder Scrolls V: Skyrim and Fallout 4. In this next generation role-playing game set amongst the stars, create any character you want and explore with unparalleled freedom as you embark on an epic journey to answer humanity’s greatest mystery."}
+        imgAlt={"punch feature"}
+        header={"No Reloading"}
+        paragraph={"You don’t carry extra ammo, so every shot must count. When your weapon runs empty, throw it at enemies to stun them. Sometimes, hand-to-hand combat is your best option, and your fists can be just as deadly as your gun."}
       />
     </div>
   );
