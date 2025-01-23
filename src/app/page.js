@@ -43,7 +43,8 @@ function Header() {
   const styles = headerStyles
   return (
     <header className={styles.header}>
-      <Image className={styles.headerImage} 
+      <Image 
+        className={styles.headerImage} 
         src="/StaticMag_Logo.png"
         alt='logo'
         width={1920}
@@ -89,6 +90,7 @@ function HeroImage() {
         <Fade>
           <Image
             className={styles.heroImage}
+            priority
             src="/StaticMag_Hero.png"
             alt='hero image'
             width={1920}
@@ -196,6 +198,7 @@ function FeatureDiv({imgSrc, imgAlt, header, paragraph}) {
       <FadeInOnView className={styles.singleFeatureDiv}>
         <Image
           className={styles.img}
+          priority
           src={imgSrc}
           alt={imgAlt}
           width={1920}

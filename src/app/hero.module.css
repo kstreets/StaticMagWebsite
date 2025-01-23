@@ -16,8 +16,8 @@
 .heroImage {
   width: 100%;
   height: auto;
-  min-width: 960;
-  max-width: 1920;
+  min-width: 960px;
+  max-width: 1920px;
   display: flex;
   justify-self: center;
   aspect-ratio: 1920 / 650;
@@ -64,7 +64,7 @@
 .steamLogo {
   width: 130px;
   height: auto;
-  aspect-ratio: 210 / 66;
+  aspect-ratio: 210px / 66px;
 }
 
 .wishListButton {

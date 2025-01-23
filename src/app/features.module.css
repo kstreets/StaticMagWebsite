@@ -14,13 +14,13 @@
   position: relative;
   width: auto;
   height: auto;
-  max-width: 1920;
+  max-width: 1920px;
   justify-content: center;
 }
 
 .img {
-  min-width: 960;
-  max-width: 1920;
+  min-width: 960px;
+  max-width: 1920px;
   aspect-ratio: 1920 / 650;
   width: 100%;
   height: auto;
