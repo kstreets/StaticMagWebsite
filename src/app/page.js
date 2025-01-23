@@ -30,10 +30,10 @@ function Header() {
   return (
     <header className={styles.header}>
       <Image className={styles.headerImage} 
-        src="/Starfield_Logo.png"
+        src="/StaticMag_Logo.png"
         alt='logo'
-        width={300}
-        height={206}
+        width={1920}
+        height={270}
       />
       <nav className={styles.nav}>
         <HeaderNavButton

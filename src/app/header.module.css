@@ -8,7 +8,11 @@
 }
 
 .headerImage {
+  height: 100%;
+  width: auto;
   margin-left: 20px;
+  aspect-ratio: 1920 / 270;
+  padding: 5px;
 }
 
 .nav {
