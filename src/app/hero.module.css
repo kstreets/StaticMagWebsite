@@ -4,6 +4,7 @@
   position: relative;
   justify-items: center;
   background-color: black;
+  overflow: hidden;
 }
 
 .heroContent {
@@ -16,7 +17,6 @@
 .heroImage {
   width: 100%;
   height: auto;
-  min-width: 960px;
   max-width: 1920px;
   display: flex;
   justify-self: center;
@@ -106,5 +106,23 @@
 @media (max-width: 850px) {
   .heroHeader {
     font-size: 14px;
+  }
+
+  .heroOverlay {
+    position: relative;
+    justify-self: center;
+    top: 0%;
+    gap: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transform: translateY(0%);
+  }
+
+  .heroHeader {
+    font-size: 12px;
+  }
+
+  .heroImage {
+    width: 150%;
   }
 }

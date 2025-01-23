@@ -53,3 +53,10 @@
     font-size: 0px;
   } 
 }
+
+@media (max-width: 500px) {
+  .headerImage {
+    width: 100%;
+    height: auto;
+  }
+}
